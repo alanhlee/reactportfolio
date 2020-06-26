@@ -11,7 +11,11 @@ const Footer = () => {
         </li>
         <li class="nav-item">
           
-            alanleeone@gmail.com
+           <a
+            class="nav-link"
+            href="alanleeone@gmail.com"
+          >
+            Email
           
         </li>
         <li class="nav-item">
