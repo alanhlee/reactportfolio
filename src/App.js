@@ -1,19 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Portfolio from './pages/Portfolio'
-import About from './About.js'
-import Contact from './pages/Contact'
+import Portfolio from "./pages/Portfolio";
+import About from "./About.js";
+import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+import './App.css'
 
 // import React from 'react';
 // import './App.css';
-import Navbar from './components/Navbar'
+import Navbar from "./components/Navbar";
 // import Jumbotron from './components/Jumbotron'
 
 function App() {
   return (
     <>
-    <Router>
-      
+      <Router>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -26,8 +27,8 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-  
-    </Router>
+        <Footer id='footer'/>
+      </Router>
     </>
   );
 }
